@@ -1352,80 +1352,80 @@
         </variant>
         <variant>
           <configItem>
-            <name>dvorak</name>
-            <description>English (Dvorak)</description>
+            <name>workman</name>
+            <description>English (Workman)</description>
           </configItem>
         </variant>
         <variant>
           <configItem>
-            <name>dvorak-intl</name>
-            <description>English (Dvorak, international with dead keys)</description>
+            <name>workman-intl</name>
+            <description>English (Workman, international with dead keys)</description>
           </configItem>
         </variant>
         <variant>
           <configItem>
-            <name>dvorak-alt-intl</name>
-            <description>English (Dvorak alternative international no dead keys)</description>
+            <name>workman-alt-intl</name>
+            <description>English (Workman alternative international no dead keys)</description>
           </configItem>
         </variant>
         <variant>
           <configItem>
-            <name>dvorak-l</name>
-            <description>English (left handed Dvorak)</description>
+            <name>workman-l</name>
+            <description>English (left handed Workman)</description>
           </configItem>
         </variant>
         <variant>
           <configItem>
-            <name>dvorak-r</name>
-            <description>English (right handed Dvorak)</description>
+            <name>workman-r</name>
+            <description>English (right handed Workman)</description>
           </configItem>
         </variant>
         <variant>
           <configItem>
-            <name>dvorak-classic</name>
-            <description>English (classic Dvorak)</description>
+            <name>workman-classic</name>
+            <description>English (classic Workman)</description>
           </configItem>
         </variant>
         <variant>
           <configItem>
             <name>dvp</name>
-            <description>English (programmer Dvorak)</description>
+            <description>English (programmer Workman)</description>
           </configItem>
         </variant>
         <variant>
           <configItem>
             <name>dvq-simplified</name>
-            <description>English (Dvorak-Qwerty, simplified)</description>
+            <description>English (Workman-Qwerty, simplified)</description>
           </configItem>
         </variant>
         <variant>
           <configItem>
-            <name>dvorak-qwerty</name>
-            <description>English (Dvorak Qwerty)</description>
+            <name>workman-qwerty</name>
+            <description>English (Workman Qwerty)</description>
           </configItem>
         </variant>
         <variant>
           <configItem>
             <name>dvq-intl</name>
-            <description>English (Dvorak-Qwerty, international with dead keys)</description>
+            <description>English (Workman-Qwerty, international with dead keys)</description>
           </configItem>
         </variant>
         <variant>
           <configItem>
             <name>dvq-alt-intl</name>
-            <description>English (Dvorak-Qwerty alternative international no dead keys)</description>
+            <description>English (Workman-Qwerty alternative international no dead keys)</description>
           </configItem>
         </variant>
         <variant>
           <configItem>
             <name>dvq-classic</name>
-            <description>English (Dvorak-Qwerty, classic)</description>
+            <description>English (Workman-Qwerty, classic)</description>
           </configItem>
         </variant>
         <variant>
           <configItem>
             <name>dvqp</name>
-            <description>English (Dvorak-Qwerty, programmer)</description>
+            <description>English (Workman-Qwerty, programmer)</description>
           </configItem>
         </variant>
         <variant>
@@ -2210,8 +2210,8 @@
         </variant>
         <variant>
           <configItem>
-            <name>dvorak</name>
-            <description>Portuguese (Brazil, Dvorak)</description>
+            <name>workman</name>
+            <description>Portuguese (Brazil, Workman)</description>
           </configItem>
         </variant>
         <variant>
@@ -2441,8 +2441,8 @@
         </variant>
         <variant>
           <configItem>
-            <name>dvorak</name>
-            <description>Cameroon Multilingual (Dvorak)</description>
+            <name>workman</name>
+            <description>Cameroon Multilingual (Workman)</description>
           </configItem>
         </variant>
       </variantList>
@@ -2472,10 +2472,10 @@
       <variantList>
         <variant>
           <configItem>
-            <name>fr-dvorak</name>
+            <name>fr-workman</name>
 
             <shortDescription>fr</shortDescription>
-            <description>French (Canada, Dvorak)</description>
+            <description>French (Canada, Workman)</description>
           </configItem>
         </variant>
         <variant>
@@ -2654,8 +2654,8 @@
         </variant>
         <variant>
           <configItem>
-            <name>dvorak-ucw</name>
-            <description>Czech (US Dvorak with CZ UCW support)</description>
+            <name>workman-ucw</name>
+            <description>Czech (US Workman with CZ UCW support)</description>
           </configItem>
         </variant>
       </variantList>
@@ -2691,8 +2691,8 @@
         </variant>
         <variant>
           <configItem>
-            <name>dvorak</name>
-            <description>Danish (Dvorak)</description>
+            <name>workman</name>
+            <description>Danish (Workman)</description>
           </configItem>
         </variant>
       </variantList>
@@ -2758,8 +2758,8 @@
         </variant>
         <variant>
           <configItem>
-            <name>dvorak</name>
-            <description>Estonian (Dvorak)</description>
+            <name>workman</name>
+            <description>Estonian (Workman)</description>
           </configItem>
         </variant>
         <variant>
@@ -3014,19 +3014,19 @@
         <variant>
           <configItem>
             <name>bepo</name>
-            <description>French (Bepo, ergonomic, Dvorak way)</description>
+            <description>French (Bepo, ergonomic, Workman way)</description>
           </configItem>
         </variant>
         <variant>
           <configItem>
             <name>bepo_latin9</name>
-            <description>French (Bepo, ergonomic, Dvorak way, Latin-9 only)</description>
+            <description>French (Bepo, ergonomic, Workman way, Latin-9 only)</description>
           </configItem>
         </variant>
         <variant>
           <configItem>
-            <name>dvorak</name>
-            <description>French (Dvorak)</description>
+            <name>workman</name>
+            <description>French (Workman)</description>
           </configItem>
         </variant>
         <variant>
@@ -3260,8 +3260,8 @@
         </variant>
         <variant>
           <configItem>
-            <name>dvorak</name>
-            <description>German (Dvorak)</description>
+            <name>workman</name>
+            <description>German (Workman)</description>
           </configItem>
         </variant>
         <variant>
@@ -3526,8 +3526,8 @@
         </variant>
         <variant>
           <configItem>
-            <name>dvorak</name>
-            <description>Icelandic (Dvorak)</description>
+            <name>workman</name>
+            <description>Icelandic (Workman)</description>
           </configItem>
         </variant>
       </variantList>
@@ -3646,8 +3646,8 @@
         </variant>
         <variant>
           <configItem>
-            <name>dvorak</name>
-            <description>Japanese (Dvorak)</description>
+            <name>workman</name>
+            <description>Japanese (Workman)</description>
           </configItem>
         </variant>
       </variantList>
@@ -4017,8 +4017,8 @@
         </variant>
         <variant>
           <configItem>
-            <name>dvorak</name>
-            <description>Norwegian (Dvorak)</description>
+            <name>workman</name>
+            <description>Norwegian (Workman)</description>
           </configItem>
         </variant>
         <variant>
@@ -4084,20 +4084,20 @@
         </variant>
         <variant>
           <configItem>
-            <name>dvorak</name>
-            <description>Polish (Dvorak)</description>
+            <name>workman</name>
+            <description>Polish (Workman)</description>
           </configItem>
         </variant>
         <variant>
           <configItem>
-            <name>dvorak_quotes</name>
-            <description>Polish (Dvorak, Polish quotes on quotemark key)</description>
+            <name>workman_quotes</name>
+            <description>Polish (Workman, Polish quotes on quotemark key)</description>
           </configItem>
         </variant>
         <variant>
           <configItem>
-            <name>dvorak_altquotes</name>
-            <description>Polish (Dvorak, Polish quotes on key 1)</description>
+            <name>workman_altquotes</name>
+            <description>Polish (Workman, Polish quotes on key 1)</description>
           </configItem>
         </variant>
         <variant>
@@ -4118,10 +4118,10 @@
         </variant>
         <variant>
           <configItem>
-            <name>ru_phonetic_dvorak</name>
+            <name>ru_phonetic_workman</name>
 
             <shortDescription>ru</shortDescription>
-            <description>Russian (Poland, phonetic Dvorak)</description>
+            <description>Russian (Poland, phonetic Workman)</description>
             <languageList>
               <iso639Id>rus</iso639Id>
             </languageList>
@@ -4130,7 +4130,7 @@
         <variant>
           <configItem>
             <name>dvp</name>
-            <description>Polish (programmer Dvorak)</description>
+            <description>Polish (programmer Workman)</description>
           </configItem>
         </variant>
       </variantList>
@@ -4549,8 +4549,8 @@
         </variant>
         <variant>
           <configItem>
-            <name>dvorak</name>
-            <description>Spanish (Dvorak)</description>
+            <name>workman</name>
+            <description>Spanish (Workman)</description>
           </configItem>
         </variant>
         <variant>
@@ -4598,8 +4598,8 @@
         </variant>
         <variant>
           <configItem>
-            <name>dvorak</name>
-            <description>Swedish (Dvorak)</description>
+            <name>workman</name>
+            <description>Swedish (Workman)</description>
           </configItem>
         </variant>
         <variant>
@@ -4641,8 +4641,8 @@
         </variant>
         <variant>
           <configItem>
-            <name>svdvorak</name>
-            <description>Swedish (Svdvorak)</description>
+            <name>svworkman</name>
+            <description>Swedish (Svworkman)</description>
           </configItem>
         </variant>
         <variant>
@@ -5110,14 +5110,14 @@
         </variant>
         <variant>
           <configItem>
-            <name>dvorak</name>
-            <description>English (UK, Dvorak)</description>
+            <name>workman</name>
+            <description>English (UK, Workman)</description>
           </configItem>
         </variant>
         <variant>
           <configItem>
-            <name>dvorakukp</name>
-            <description>English (UK, Dvorak with UK punctuation)</description>
+            <name>workmanukp</name>
+            <description>English (UK, Workman with UK punctuation)</description>
           </configItem>
         </variant>
         <variant>
@@ -5590,14 +5590,14 @@
         </variant>
         <variant>
           <configItem>
-            <name>capewell-dvorak</name>
-            <description>Filipino (Capewell-Dvorak Latin)</description>
+            <name>capewell-workman</name>
+            <description>Filipino (Capewell-Workman Latin)</description>
           </configItem>
         </variant>
         <variant>
           <configItem>
-            <name>capewell-dvorak-bay</name>
-            <description>Filipino (Capewell-Dvorak Baybayin)</description>
+            <name>capewell-workman-bay</name>
+            <description>Filipino (Capewell-Workman Baybayin)</description>
             <languageList><iso639Id>bik</iso639Id>
                           <iso639Id>ceb</iso639Id>
                           <iso639Id>fil</iso639Id>
@@ -5656,14 +5656,14 @@
         </variant>
         <variant>
           <configItem>
-            <name>dvorak</name>
-            <description>Filipino (Dvorak Latin)</description>
+            <name>workman</name>
+            <description>Filipino (Workman Latin)</description>
           </configItem>
         </variant>
         <variant>
           <configItem>
-            <name>dvorak-bay</name>
-            <description>Filipino (Dvorak Baybayin)</description>
+            <name>workman-bay</name>
+            <description>Filipino (Workman Baybayin)</description>
             <languageList><iso639Id>bik</iso639Id>
                           <iso639Id>ceb</iso639Id>
                           <iso639Id>fil</iso639Id>
@@ -6777,8 +6777,8 @@
       </option>
       <option>
         <configItem>
-          <name>esperanto:dvorak</name>
-          <description>To the corresponding key in a Dvorak layout</description>
+          <name>esperanto:workman</name>
+          <description>To the corresponding key in a Workman layout</description>
        </configItem>
       </option>
       <option>

@@ -1,4 +1,4 @@
-Dvorak Qwerty for Linux XKB configuration files
+Workman Qwerty for Linux XKB configuration files
 ------
 > [!NOTE]
 > I'm not the original creator of this config, I had a fork, and original creator must have deleted their github account.
@@ -34,20 +34,20 @@ download zip, and simply replace files:
 
 and add:
 
-`/usr/share/X11/xkb/types/dvorak-qwerty`
+`/usr/share/X11/xkb/types/workman-qwerty`
 
 after reboot, you can choose new input sources from text entry setting:
-Dvorak-Qwerty
+Workman-Qwerty
 ------
-Dvorak-Qwerty simplified (no dead keys)
+Workman-Qwerty simplified (no dead keys)
 ------
-Dvorak-Qwerty, international with dead keys
+Workman-Qwerty, international with dead keys
 ------
-Dvorak-Qwerty alternative international no dead keys
+Workman-Qwerty alternative international no dead keys
 ------
-Dvorak-Qwerty, classic
+Workman-Qwerty, classic
 ------
-Dvorak-Qwerty, programmer
+Workman-Qwerty, programmer
 ------
 
 you may need reassign shortcuts in system setting.

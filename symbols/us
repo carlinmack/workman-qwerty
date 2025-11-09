@@ -192,9 +192,9 @@ xkb_symbols "alt-intl" {
 // based on a keyboard map from an 'xkb/symbols/dk' file
 
 partial alphanumeric_keys
-xkb_symbols "dvorak" {
+xkb_symbols "workman" {
 
-    name[Group1]= "English (Dvorak)";
+    name[Group1]= "English (Workman)";
 
     key <TLDE> { [       grave, asciitilde, dead_grave, dead_tilde  ] };
 
@@ -251,16 +251,16 @@ xkb_symbols "dvorak" {
 
 };
 
-// Dvorak international with dead keys
+// Workman international with dead keys
 // Olivier Mehani (shtrom-xorg@ssji.net)
-// Reproduce the per-key mapping of us(intl) for the dvorak layout
+// Reproduce the per-key mapping of us(intl) for the workman layout
 // aka "I just swapped my keys over"
 partial alphanumeric_keys
-xkb_symbols "dvorak-intl" {
+xkb_symbols "workman-intl" {
 
-    name[Group1]= "English (Dvorak, international with dead keys)";
+    name[Group1]= "English (Workman, international with dead keys)";
 
-    include "us(dvorak)"
+    include "us(workman)"
 
     key <TLDE> { [dead_grave, dead_tilde,         grave,       asciitilde ] };
 
@@ -318,9 +318,9 @@ xkb_symbols "dvorak-intl" {
     include "level3(ralt_switch)"
 };
 
-// Dvorak international without dead keys
+// Workman international without dead keys
 // Stephane Magnenat (stephane at magnenat dot net, http://stephane.magnenat.net)
-// Based on information from http://www.poupinou.org/dvorak/index.html
+// Based on information from http://www.poupinou.org/workman/index.html
 //
 //  `   1   2   3   4   5   6   7   8   9   0   [   ]   \
 //                  €
@@ -335,11 +335,11 @@ xkb_symbols "dvorak-intl" {
 //      â   ö   è   ù   ï
 
 partial alphanumeric_keys
-xkb_symbols "dvorak-alt-intl" {
+xkb_symbols "workman-alt-intl" {
 
-    name[Group1]= "English (Dvorak alternative international no dead keys)";
+    name[Group1]= "English (Workman alternative international no dead keys)";
 
-    include "us(dvorak)"
+    include "us(workman)"
 
     key <AE04> { [         4,  dollar,    EuroSign ] };
 
@@ -365,14 +365,14 @@ xkb_symbols "dvorak-alt-intl" {
     include "level3(ralt_switch)"
 };
 
-// Left and right handed dvorak layouts
+// Left and right handed workman layouts
 // by sqweek <sqweek@gmail.com> 2006-01-30
 // Based on the corresponding layouts in the console-tools package.
 partial alphanumeric_keys
-xkb_symbols "dvorak-l" {
+xkb_symbols "workman-l" {
 
-    include "us(dvorak)"
-    name[Group1]= "English (left handed Dvorak)";
+    include "us(workman)"
+    name[Group1]= "English (left handed Workman)";
 
     key <AE01> {    [ bracketleft,  braceleft   ]   };
     key <AE02> {    [ bracketright, braceright  ]   };
@@ -425,10 +425,10 @@ xkb_symbols "dvorak-l" {
 };
 
 partial alphanumeric_keys
-xkb_symbols "dvorak-r" {
+xkb_symbols "workman-r" {
 
-    include "us(dvorak)"
-    name[Group1]= "English (right handed Dvorak)";
+    include "us(workman)"
+    name[Group1]= "English (right handed Workman)";
 
     key <AE01> {    [       1,  exclam      ]   };
     key <AE02> {    [       2,  at      ]   };
@@ -480,14 +480,14 @@ xkb_symbols "dvorak-r" {
     key <AB10> {    [  apostrophe,  quotedbl    ]   };
 };
 
-// Classic dvorak layout
+// Classic workman layout
 // by Piter Punk <piterpk@terra.com.br> - 2006-07-06
-// Based on dvorak layout and e-mail from Russel L. Harris rlharris@oplink.net
+// Based on workman layout and e-mail from Russel L. Harris rlharris@oplink.net
 // on xorg list.
 partial alphanumeric_keys
-xkb_symbols "dvorak-classic" {
+xkb_symbols "workman-classic" {
 
-    name[Group1]= "English (classic Dvorak)";
+    name[Group1]= "English (classic Workman)";
 
     key <TLDE> { [       grave, asciitilde, dead_grave, dead_tilde  ] };
 
@@ -543,16 +543,16 @@ xkb_symbols "dvorak-classic" {
 
 };
 
-// Programmer Dvorak, by Roland Kaufmann <rlndkfmn at gmail dot com>
-// License: BSD, available at <http://www.kaufmann.no/roland/dvorak/license.html>
+// Programmer Workman, by Roland Kaufmann <rlndkfmn at gmail dot com>
+// License: BSD, available at <http://www.kaufmann.no/roland/workman/license.html>
 // Main features: Numbers are in shift position (like French), symbols have been
 // placed in locations that give good hand-alternation and finger rolling with
 // symbols that usually follows, accented characters are possible for I18N.
 partial alphanumeric_keys
 xkb_symbols "dvp" {
-    include "us(dvorak)"
+    include "us(workman)"
 
-    name[Group1] = "English (programmer Dvorak)";
+    name[Group1] = "English (programmer Workman)";
 
     //             Unmodified       Shift           AltGr            Shift+AltGr
     // symbols row, left side
@@ -609,248 +609,248 @@ xkb_symbols "dvp" {
 
 partial alphanumeric_keys
 xkb_symbols "dvq-simplified" {
-    name[group1]="English (Dvorak-Qwerty, simplified)";
+    name[group1]="English (Workman-Qwerty, simplified)";
 
     key <TLDE> {
-        type[group1]="DVORAK_QWERTY_NONALPHABETIC_NONALPHABETIC",
+        type[group1]="WORKMAN_QWERTY_NONALPHABETIC_NONALPHABETIC",
         symbols[Group1]= [ NoSymbol, grave, asciitilde ],
         actions[Group1]= [ RedirectKey(key=<I120>,clearmods=Lock) ]
     };
     key <AE01> {
-        type[group1]= "DVORAK_QWERTY_NONALPHABETIC_NONALPHABETIC",
+        type[group1]= "WORKMAN_QWERTY_NONALPHABETIC_NONALPHABETIC",
         symbols[Group1]= [ NoSymbol, 1, exclam ],
         actions[Group1]= [ RedirectKey(key=<I126>,clearmods=Lock) ]
     };
     key <AE02> {
-        type[group1]="DVORAK_QWERTY_NONALPHABETIC_NONALPHABETIC",
+        type[group1]="WORKMAN_QWERTY_NONALPHABETIC_NONALPHABETIC",
         symbols[Group1]= [ NoSymbol, 2, at ],
         actions[Group1]= [ RedirectKey(key=<I128>,clearmods=Lock) ]
     };
     key <AE03> {
-        type[group1]="DVORAK_QWERTY_NONALPHABETIC_NONALPHABETIC",
+        type[group1]="WORKMAN_QWERTY_NONALPHABETIC_NONALPHABETIC",
         symbols[Group1]= [ NoSymbol, 3, numbersign ],
         actions[Group1]= [ RedirectKey(key=<I147>,clearmods=Lock) ]
     };
     key <AE04> {
-        type[group1]="DVORAK_QWERTY_NONALPHABETIC_NONALPHABETIC",
+        type[group1]="WORKMAN_QWERTY_NONALPHABETIC_NONALPHABETIC",
         symbols[Group1]= [ NoSymbol, 4, dollar ],
         actions[Group1]= [ RedirectKey(key=<I148>,clearmods=Lock) ]
     };
     key <AE05> {
-        type[group1]="DVORAK_QWERTY_NONALPHABETIC_NONALPHABETIC",
+        type[group1]="WORKMAN_QWERTY_NONALPHABETIC_NONALPHABETIC",
         symbols[Group1]= [ NoSymbol, 5, percent ],
         actions[Group1]= [ RedirectKey(key=<I149>,clearmods=Lock) ]
     };
     key <AE06> {
-        type[group1]="DVORAK_QWERTY_NONALPHABETIC_NONALPHABETIC",
+        type[group1]="WORKMAN_QWERTY_NONALPHABETIC_NONALPHABETIC",
         symbols[Group1]= [ NoSymbol, 6, asciicircum ],
         actions[Group1]= [ RedirectKey(key=<I150>,clearmods=Lock) ]
     };
     key <AE07> {
-        type[group1]="DVORAK_QWERTY_NONALPHABETIC_NONALPHABETIC",
+        type[group1]="WORKMAN_QWERTY_NONALPHABETIC_NONALPHABETIC",
         symbols[Group1]= [ NoSymbol, 7, ampersand ],
         actions[Group1]= [ RedirectKey(key=<I151>,clearmods=Lock) ]
     };
     key <AE08> {
-        type[group1]="DVORAK_QWERTY_NONALPHABETIC_NONALPHABETIC",
+        type[group1]="WORKMAN_QWERTY_NONALPHABETIC_NONALPHABETIC",
         symbols[Group1]= [ NoSymbol, 8, asterisk ],
         actions[Group1]= [ RedirectKey(key=<I152>,clearmods=Lock) ]
     };
     key <AE09> {
-        type[group1]="DVORAK_QWERTY_NONALPHABETIC_NONALPHABETIC",
+        type[group1]="WORKMAN_QWERTY_NONALPHABETIC_NONALPHABETIC",
         symbols[Group1]= [ NoSymbol, 9, parenleft ],
         actions[Group1]= [ RedirectKey(key=<I153>,clearmods=Lock) ]
     };
     key <AE10> {
-        type[group1]="DVORAK_QWERTY_NONALPHABETIC_NONALPHABETIC",
+        type[group1]="WORKMAN_QWERTY_NONALPHABETIC_NONALPHABETIC",
         symbols[Group1]= [ NoSymbol, 0, parenright ],
         actions[Group1]= [ RedirectKey(key=<I154>,clearmods=Lock) ]
     };
     key <AE11> {
-        type[group1]="DVORAK_QWERTY_NONALPHABETIC_NONALPHABETIC",
+        type[group1]="WORKMAN_QWERTY_NONALPHABETIC_NONALPHABETIC",
         symbols[Group1]= [ NoSymbol, bracketleft, braceleft ],
         actions[Group1]= [ RedirectKey(key=<I155>,clearmods=Lock) ]
     };
     key <AE12> {
-        type[group1]="DVORAK_QWERTY_NONALPHABETIC_NONALPHABETIC",
+        type[group1]="WORKMAN_QWERTY_NONALPHABETIC_NONALPHABETIC",
         symbols[Group1]= [ NoSymbol, bracketright, braceright ],
         actions[Group1]= [ RedirectKey(key=<I156>,clearmods=Lock) ]
     };
 
 
     key <AD01> {
-        type[group1]="DVORAK_QWERTY_NONALPHABETIC_NONALPHABETIC",
+        type[group1]="WORKMAN_QWERTY_NONALPHABETIC_NONALPHABETIC",
         symbols[Group1]= [ NoSymbol, apostrophe, quotedbl ],
         actions[Group1]= [ RedirectKey(key=<I157>,clearmods=Lock) ]
     };
     key <AD02> {
-        type[group1]="DVORAK_QWERTY_NONALPHABETIC_NONALPHABETIC",
+        type[group1]="WORKMAN_QWERTY_NONALPHABETIC_NONALPHABETIC",
         symbols[Group1]= [ NoSymbol, comma, less ],
         actions[Group1]= [ RedirectKey(key=<I158>,clearmods=Lock) ]
     };
     key <AD03> {
-        type[group1]="DVORAK_QWERTY_NONALPHABETIC_NONALPHABETIC",
+        type[group1]="WORKMAN_QWERTY_NONALPHABETIC_NONALPHABETIC",
         symbols[Group1]= [ NoSymbol, period, greater ],
         actions[Group1]= [ RedirectKey(key=<I159>,clearmods=Lock) ]
     };
     key <AD04> {
-        type[group1]="DVORAK_QWERTY_ALPHABETIC_NONALPHABETIC",
+        type[group1]="WORKMAN_QWERTY_ALPHABETIC_NONALPHABETIC",
         symbols[Group1]= [ NoSymbol, p, P ],
         actions[Group1]= [ RedirectKey(key=<I160>,clearmods=Lock) ]
     };
     key <AD05> {
-        type[group1]="DVORAK_QWERTY_ALPHABETIC_NONALPHABETIC",
+        type[group1]="WORKMAN_QWERTY_ALPHABETIC_NONALPHABETIC",
         symbols[Group1]= [ NoSymbol, y, Y ],
         actions[Group1]= [ RedirectKey(key=<I161>,clearmods=Lock) ]
     };
     key <AD06> {
-        type[group1]="DVORAK_QWERTY_ALPHABETIC_NONALPHABETIC",
+        type[group1]="WORKMAN_QWERTY_ALPHABETIC_NONALPHABETIC",
         symbols[Group1]= [ NoSymbol, f, F ],
         actions[Group1]= [ RedirectKey(key=<I162>,clearmods=Lock) ]
     };
     key <AD07> {
-        type[group1]="DVORAK_QWERTY_ALPHABETIC_NONALPHABETIC",
+        type[group1]="WORKMAN_QWERTY_ALPHABETIC_NONALPHABETIC",
         symbols[Group1]= [ NoSymbol, g, G ],
         actions[Group1]= [ RedirectKey(key=<I163>,clearmods=Lock) ]
     };
     key <AD08> {
-        type[group1]="DVORAK_QWERTY_ALPHABETIC_NONALPHABETIC",
+        type[group1]="WORKMAN_QWERTY_ALPHABETIC_NONALPHABETIC",
         symbols[Group1]= [ NoSymbol, c, C ],
         actions[Group1]= [ RedirectKey(key=<I164>,clearmods=Lock) ]
     };
     key <AD09> {
-        type[group1]="DVORAK_QWERTY_ALPHABETIC_NONALPHABETIC",
+        type[group1]="WORKMAN_QWERTY_ALPHABETIC_NONALPHABETIC",
         symbols[Group1]= [ NoSymbol, r, R ],
         actions[Group1]= [ RedirectKey(key=<I165>,clearmods=Lock) ]
     };
     key <AD10> {
-        type[group1]="DVORAK_QWERTY_ALPHABETIC_NONALPHABETIC",
+        type[group1]="WORKMAN_QWERTY_ALPHABETIC_NONALPHABETIC",
         symbols[Group1]= [ NoSymbol, l, L ],
         actions[Group1]= [ RedirectKey(key=<I166>,clearmods=Lock) ]
     };
     key <AD11> {
-        type[group1]="DVORAK_QWERTY_NONALPHABETIC_NONALPHABETIC",
+        type[group1]="WORKMAN_QWERTY_NONALPHABETIC_NONALPHABETIC",
         symbols[Group1]= [ NoSymbol, slash, question ],
         actions[Group1]= [ RedirectKey(key=<I167>,clearmods=Lock) ]
     };
     key <AD12> {
-        type[group1]="DVORAK_QWERTY_NONALPHABETIC_NONALPHABETIC",
+        type[group1]="WORKMAN_QWERTY_NONALPHABETIC_NONALPHABETIC",
         symbols[Group1]= [ NoSymbol, equal, plus ],
         actions[Group1]= [ RedirectKey(key=<I168>,clearmods=Lock) ]
     };
 
 
     key <AC01> {
-        type[group1]="DVORAK_QWERTY_ALPHABETIC_NONALPHABETIC",
+        type[group1]="WORKMAN_QWERTY_ALPHABETIC_NONALPHABETIC",
         symbols[Group1]= [ NoSymbol, a, A ],
         actions[Group1]= [ RedirectKey(key=<I178>,clearmods=Lock) ]
     };
     key <AC02> {
-        type[group1]="DVORAK_QWERTY_ALPHABETIC_NONALPHABETIC",
+        type[group1]="WORKMAN_QWERTY_ALPHABETIC_NONALPHABETIC",
         symbols[Group1]= [ NoSymbol, o, O ],
         actions[Group1]= [ RedirectKey(key=<I179>,clearmods=Lock) ]
     };
     key <AC03> {
-        type[group1]="DVORAK_QWERTY_ALPHABETIC_NONALPHABETIC",
+        type[group1]="WORKMAN_QWERTY_ALPHABETIC_NONALPHABETIC",
         symbols[Group1]= [ NoSymbol, e, E ],
         actions[Group1]= [ RedirectKey(key=<I180>,clearmods=Lock) ]
     };
     key <AC04> {
-        type[group1]="DVORAK_QWERTY_ALPHABETIC_NONALPHABETIC",
+        type[group1]="WORKMAN_QWERTY_ALPHABETIC_NONALPHABETIC",
         symbols[Group1]= [ NoSymbol, u, U ],
         actions[Group1]= [ RedirectKey(key=<I181>,clearmods=Lock) ]
     };
     key <AC05> {
-        type[group1]="DVORAK_QWERTY_ALPHABETIC_NONALPHABETIC",
+        type[group1]="WORKMAN_QWERTY_ALPHABETIC_NONALPHABETIC",
         symbols[Group1]= [ NoSymbol, i, I ],
         actions[Group1]= [ RedirectKey(key=<I182>,clearmods=Lock) ]
     };
     key <AC06> {
-        type[group1]="DVORAK_QWERTY_ALPHABETIC_NONALPHABETIC",
+        type[group1]="WORKMAN_QWERTY_ALPHABETIC_NONALPHABETIC",
         symbols[Group1]= [ NoSymbol, d, D ],
         actions[Group1]= [ RedirectKey(key=<I183>,clearmods=Lock) ]
     };
     key <AC07> {
-        type[group1]="DVORAK_QWERTY_ALPHABETIC_NONALPHABETIC",
+        type[group1]="WORKMAN_QWERTY_ALPHABETIC_NONALPHABETIC",
         symbols[Group1]= [ NoSymbol, h, H ],
         actions[Group1]= [ RedirectKey(key=<I184>,clearmods=Lock) ]
     };
     key <AC08> {
-        type[group1]="DVORAK_QWERTY_ALPHABETIC_NONALPHABETIC",
+        type[group1]="WORKMAN_QWERTY_ALPHABETIC_NONALPHABETIC",
         symbols[Group1]= [ NoSymbol, t, T ],
         actions[Group1]= [ RedirectKey(key=<I185>,clearmods=Lock) ]
     };
     key <AC09> {
-        type[group1]="DVORAK_QWERTY_ALPHABETIC_NONALPHABETIC",
+        type[group1]="WORKMAN_QWERTY_ALPHABETIC_NONALPHABETIC",
         symbols[Group1]= [ NoSymbol, n, N ],
         actions[Group1]= [ RedirectKey(key=<I186>,clearmods=Lock) ]
     };
     key <AC10> {
-        type[group1]="DVORAK_QWERTY_ALPHABETIC_NONALPHABETIC",
+        type[group1]="WORKMAN_QWERTY_ALPHABETIC_NONALPHABETIC",
         symbols[Group1]= [ NoSymbol, s, S ],
         actions[Group1]= [ RedirectKey(key=<I187>,clearmods=Lock) ]
     };
     key <AC11> {
-        type[group1]="DVORAK_QWERTY_NONALPHABETIC_NONALPHABETIC",
+        type[group1]="WORKMAN_QWERTY_NONALPHABETIC_NONALPHABETIC",
         symbols[Group1]= [ NoSymbol, minus, underscore ],
         actions[Group1]= [ RedirectKey(key=<I188>,clearmods=Lock) ]
     };
 
 
     key <AB01> {
-        type[group1]="DVORAK_QWERTY_NONALPHABETIC_NONALPHABETIC",
+        type[group1]="WORKMAN_QWERTY_NONALPHABETIC_NONALPHABETIC",
         symbols[Group1]= [ NoSymbol, semicolon, colon ],
         actions[Group1]= [ RedirectKey(key=<I189>,clearmods=Lock) ]
     };
     key <AB02> {
-        type[group1]="DVORAK_QWERTY_ALPHABETIC_NONALPHABETIC",
+        type[group1]="WORKMAN_QWERTY_ALPHABETIC_NONALPHABETIC",
         symbols[Group1]= [ NoSymbol, q, Q ],
         actions[Group1]= [ RedirectKey(key=<I190>,clearmods=Lock) ]
     };
     key <AB03> {
-        type[group1]="DVORAK_QWERTY_ALPHABETIC_NONALPHABETIC",
+        type[group1]="WORKMAN_QWERTY_ALPHABETIC_NONALPHABETIC",
         symbols[Group1]= [ NoSymbol, j, J ],
         actions[Group1]= [ RedirectKey(key=<I210>,clearmods=Lock) ]
     };
     key <AB04> {
-        type[group1]="DVORAK_QWERTY_ALPHABETIC_NONALPHABETIC",
+        type[group1]="WORKMAN_QWERTY_ALPHABETIC_NONALPHABETIC",
         symbols[Group1]= [ NoSymbol, k, K ],
         actions[Group1]= [ RedirectKey(key=<I211>,clearmods=Lock) ]
     };
     key <AB05> {
-        type[group1]="DVORAK_QWERTY_ALPHABETIC_NONALPHABETIC",
+        type[group1]="WORKMAN_QWERTY_ALPHABETIC_NONALPHABETIC",
         symbols[Group1]= [ NoSymbol, x, X ],
         actions[Group1]= [ RedirectKey(key=<I212>,clearmods=Lock) ]
     };
     key <AB06> {
-        type[group1]="DVORAK_QWERTY_ALPHABETIC_NONALPHABETIC",
+        type[group1]="WORKMAN_QWERTY_ALPHABETIC_NONALPHABETIC",
         symbols[Group1]= [ NoSymbol, b, B ],
         actions[Group1]= [ RedirectKey(key=<I213>,clearmods=Lock) ]
     };
     key <AB07> {
-        type[group1]="DVORAK_QWERTY_ALPHABETIC_NONALPHABETIC",
+        type[group1]="WORKMAN_QWERTY_ALPHABETIC_NONALPHABETIC",
         symbols[Group1]= [ NoSymbol, m, M ],
         actions[Group1]= [ RedirectKey(key=<I219>,clearmods=Lock) ]
     };
     key <AB08> {
-        type[group1]="DVORAK_QWERTY_ALPHABETIC_NONALPHABETIC",
+        type[group1]="WORKMAN_QWERTY_ALPHABETIC_NONALPHABETIC",
         symbols[Group1]= [ NoSymbol, w, W ],
         actions[Group1]= [ RedirectKey(key=<I220>,clearmods=Lock) ]
     };
     key <AB09> {
-        type[group1]="DVORAK_QWERTY_ALPHABETIC_NONALPHABETIC",
+        type[group1]="WORKMAN_QWERTY_ALPHABETIC_NONALPHABETIC",
         symbols[Group1]= [ NoSymbol, v, V ],
         actions[Group1]= [ RedirectKey(key=<I221>,clearmods=Lock) ]
     };
     key <AB10> {
-        type[group1]="DVORAK_QWERTY_ALPHABETIC_NONALPHABETIC",
+        type[group1]="WORKMAN_QWERTY_ALPHABETIC_NONALPHABETIC",
         symbols[Group1]= [ NoSymbol, z, Z ],
         actions[Group1]= [ RedirectKey(key=<I222>,clearmods=Lock) ]
     };
 
 
     key <BKSL> {
-        type[group1]="DVORAK_QWERTY_NONALPHABETIC_NONALPHABETIC",
+        type[group1]="WORKMAN_QWERTY_NONALPHABETIC_NONALPHABETIC",
         symbols[Group1]= [ NoSymbol, backslash, bar ],
         actions[Group1]= [ RedirectKey(key=<I223>,clearmods=Lock) ]
     };
@@ -910,9 +910,9 @@ xkb_symbols "dvq-simplified" {
 };
 
 partial alphanumeric_keys
-xkb_symbols "dvorak-qwerty" {
+xkb_symbols "workman-qwerty" {
 
-    name[Group1]= "English (Dvorak Qwerty)";
+    name[Group1]= "English (Workman Qwerty)";
 
     include "us(dvq-simplified)"
 
@@ -934,7 +934,7 @@ xkb_symbols "dvorak-qwerty" {
 partial alphanumeric_keys
 xkb_symbols "dvq-intl" {
 
-    name[Group1]= "English (Dvorak-Qwerty, international with dead keys)";
+    name[Group1]= "English (Workman-Qwerty, international with dead keys)";
 
     include "us(dvq-simplified)"
 
@@ -953,33 +953,33 @@ xkb_symbols "dvq-intl" {
     key <AE12> { [ NoSymbol,     bracketright,       braceright,       guillemotright, rightdoublequotemark ] };
 
     key <AD01> { [ NoSymbol,       dead_acute,   dead_diaeresis,           apostrophe,             quotedbl ] };
-    key <AD02> { [ NoSymbol,            comma,             less,             ccedilla,             Ccedilla ], type[group1]="DVORAK_QWERTY_NONALPHABETIC_ALPHABETIC" };
+    key <AD02> { [ NoSymbol,            comma,             less,             ccedilla,             Ccedilla ], type[group1]="WORKMAN_QWERTY_NONALPHABETIC_ALPHABETIC" };
     key <AD03> { [ NoSymbol,           period,          greater,        dead_abovedot,           dead_caron ] };
-    key <AD04> { [ NoSymbol,                p,                P,           odiaeresis,           Odiaeresis ], type[group1]="DVORAK_QWERTY_ALPHABETIC_ALPHABETIC" };
-    key <AD05> { [ NoSymbol,                y,                Y,           udiaeresis,           Udiaeresis ], type[group1]="DVORAK_QWERTY_ALPHABETIC_ALPHABETIC" };
+    key <AD04> { [ NoSymbol,                p,                P,           odiaeresis,           Odiaeresis ], type[group1]="WORKMAN_QWERTY_ALPHABETIC_ALPHABETIC" };
+    key <AD05> { [ NoSymbol,                y,                Y,           udiaeresis,           Udiaeresis ], type[group1]="WORKMAN_QWERTY_ALPHABETIC_ALPHABETIC" };
     key <AD08> { [ NoSymbol,                c,                C,            copyright,                 cent ] };
     key <AD09> { [ NoSymbol,                r,                R,           registered,           registered ] };
-    key <AD10> { [ NoSymbol,                l,                L,               oslash,             Ooblique ], type[group1]="DVORAK_QWERTY_ALPHABETIC_ALPHABETIC" };
+    key <AD10> { [ NoSymbol,                l,                L,               oslash,             Ooblique ], type[group1]="WORKMAN_QWERTY_ALPHABETIC_ALPHABETIC" };
     key <AD11> { [ NoSymbol,            slash,         question,         questiondown,            dead_hook ] };
     // key <AD12> { [ NoSymbol,        equal,            plus,             multiply,             division ] };
 
-    key <AC01> { [ NoSymbol,                a,                A,               aacute,               Aacute ], type[group1]="DVORAK_QWERTY_ALPHABETIC_ALPHABETIC" };
-    key <AC02> { [ NoSymbol,                o,                O,               oacute,               Oacute ], type[group1]="DVORAK_QWERTY_ALPHABETIC_ALPHABETIC" };
-    key <AC03> { [ NoSymbol,                e,                E,               eacute,               Eacute ], type[group1]="DVORAK_QWERTY_ALPHABETIC_ALPHABETIC" };
-    key <AC04> { [ NoSymbol,                u,                U,               uacute,               Uacute ], type[group1]="DVORAK_QWERTY_ALPHABETIC_ALPHABETIC" };
-    key <AC05> { [ NoSymbol,                i,                I,               iacute,               Iacute ], type[group1]="DVORAK_QWERTY_ALPHABETIC_ALPHABETIC" };
-    key <AC06> { [ NoSymbol,                d,                D,                  eth,                  ETH ], type[group1]="DVORAK_QWERTY_ALPHABETIC_ALPHABETIC" };
-    key <AC08> { [ NoSymbol,                t,                T,                thorn,                THORN ], type[group1]="DVORAK_QWERTY_ALPHABETIC_ALPHABETIC" };
-    key <AC09> { [ NoSymbol,                n,                N,               ntilde,               Ntilde ], type[group1]="DVORAK_QWERTY_ALPHABETIC_ALPHABETIC" };
+    key <AC01> { [ NoSymbol,                a,                A,               aacute,               Aacute ], type[group1]="WORKMAN_QWERTY_ALPHABETIC_ALPHABETIC" };
+    key <AC02> { [ NoSymbol,                o,                O,               oacute,               Oacute ], type[group1]="WORKMAN_QWERTY_ALPHABETIC_ALPHABETIC" };
+    key <AC03> { [ NoSymbol,                e,                E,               eacute,               Eacute ], type[group1]="WORKMAN_QWERTY_ALPHABETIC_ALPHABETIC" };
+    key <AC04> { [ NoSymbol,                u,                U,               uacute,               Uacute ], type[group1]="WORKMAN_QWERTY_ALPHABETIC_ALPHABETIC" };
+    key <AC05> { [ NoSymbol,                i,                I,               iacute,               Iacute ], type[group1]="WORKMAN_QWERTY_ALPHABETIC_ALPHABETIC" };
+    key <AC06> { [ NoSymbol,                d,                D,                  eth,                  ETH ], type[group1]="WORKMAN_QWERTY_ALPHABETIC_ALPHABETIC" };
+    key <AC08> { [ NoSymbol,                t,                T,                thorn,                THORN ], type[group1]="WORKMAN_QWERTY_ALPHABETIC_ALPHABETIC" };
+    key <AC09> { [ NoSymbol,                n,                N,               ntilde,               Ntilde ], type[group1]="WORKMAN_QWERTY_ALPHABETIC_ALPHABETIC" };
     key <AC10> { [ NoSymbol,                s,                S,               ssharp,              section ] };
     // key <AC11> { [ NoSymbol,        minus,      underscore,                  yen,        dead_belowdot ] };
 
     key <AB01> { [ NoSymbol,        semicolon,            colon,            paragraph,               degree ] };
-    key <AB02> { [ NoSymbol,                q,                Q,           adiaeresis,           Adiaeresis ], type[group1]="DVORAK_QWERTY_ALPHABETIC_ALPHABETIC" };
-    key <AB04> { [ NoSymbol,                k,                K,                   oe,                   OE ], type[group1]="DVORAK_QWERTY_ALPHABETIC_ALPHABETIC" };
+    key <AB02> { [ NoSymbol,                q,                Q,           adiaeresis,           Adiaeresis ], type[group1]="WORKMAN_QWERTY_ALPHABETIC_ALPHABETIC" };
+    key <AB04> { [ NoSymbol,                k,                K,                   oe,                   OE ], type[group1]="WORKMAN_QWERTY_ALPHABETIC_ALPHABETIC" };
     key <AB07> { [ NoSymbol,                m,                M,                   mu,                   mu ] };
-    key <AB08> { [ NoSymbol,                w,                W,                aring,                Aring ], type[group1]="DVORAK_QWERTY_ALPHABETIC_ALPHABETIC" };
-    key <AB10> { [ NoSymbol,                z,                Z,                   ae,                   AE ], type[group1]="DVORAK_QWERTY_ALPHABETIC_ALPHABETIC" };
+    key <AB08> { [ NoSymbol,                w,                W,                aring,                Aring ], type[group1]="WORKMAN_QWERTY_ALPHABETIC_ALPHABETIC" };
+    key <AB10> { [ NoSymbol,                z,                Z,                   ae,                   AE ], type[group1]="WORKMAN_QWERTY_ALPHABETIC_ALPHABETIC" };
 
     key <BKSL> { [ NoSymbol,        backslash,              bar,              notsign,            brokenbar ] };
 
@@ -990,7 +990,7 @@ xkb_symbols "dvq-intl" {
 partial alphanumeric_keys
 xkb_symbols "dvq-alt-intl" {
 
-    name[group1]="English (Dvorak-Qwerty alternative international no dead keys)";
+    name[group1]="English (Workman-Qwerty alternative international no dead keys)";
 
     include "us(dvq-simplified)"
 
@@ -1029,7 +1029,7 @@ xkb_symbols "dvq-classic" {
 
     include "us(dvq-simplified)"
 
-    name[Group1]= "English (Dvorak-Qwerty, classic)";
+    name[Group1]= "English (Workman-Qwerty, classic)";
 
     key <TLDE> { [ NoSymbol,            grave,       asciitilde,       dead_grave,       dead_tilde ] };
     key <AE01> { [ NoSymbol,      bracketleft,        braceleft ] };
@@ -1062,42 +1062,42 @@ xkb_symbols "dvqp" {
 
     include "us(dvq-simplified)"
 
-    name[Group1]= "English (Dvorak-Qwerty, programmer)";
+    name[Group1]= "English (Workman-Qwerty, programmer)";
 
     key <TLDE> { [ NoSymbol,           dollar,       asciitilde,       dead_tilde,       dead_tilde ] };
     key <AE01> { [ NoSymbol,        ampersand,          percent ] };
-    key <AE02> { [ NoSymbol,      bracketleft,                7,         currency ], type[group1]= "DVORAK_QWERTY_ALPHABETIC_ALPHABETIC" };
-    key <AE03> { [ NoSymbol,        braceleft,                5,             cent ], type[group1]= "DVORAK_QWERTY_ALPHABETIC_ALPHABETIC" };
-    key <AE04> { [ NoSymbol,       braceright,                3,              yen ], type[group1]= "DVORAK_QWERTY_ALPHABETIC_ALPHABETIC" };
-    key <AE05> { [ NoSymbol,        parenleft,                1,         EuroSign ], type[group1]= "DVORAK_QWERTY_ALPHABETIC_ALPHABETIC" };
-    key <AE06> { [ NoSymbol,            equal,                9,         sterling,dead_circumflex ], type[group1]= "DVORAK_QWERTY_ALPHABETIC_ALPHABETIC" };
-    key <AE07> { [ NoSymbol,         asterisk,                0 ], type[group1]= "DVORAK_QWERTY_ALPHABETIC_ALPHABETIC" };
-    key <AE08> { [ NoSymbol,       parenright,                2,          onehalf ], type[group1]= "DVORAK_QWERTY_ALPHABETIC_ALPHABETIC" };
-    key <AE09> { [ NoSymbol,             plus,                4,       dead_grave ], type[group1]= "DVORAK_QWERTY_ALPHABETIC_ALPHABETIC" };
-    key <AE10> { [ NoSymbol,     bracketright,                6 ], type[group1]= "DVORAK_QWERTY_ALPHABETIC_ALPHABETIC" };
-    key <AE11> { [ NoSymbol,           exclam,                8,       exclamdown ], type[group1]= "DVORAK_QWERTY_ALPHABETIC_ALPHABETIC" };
+    key <AE02> { [ NoSymbol,      bracketleft,                7,         currency ], type[group1]= "WORKMAN_QWERTY_ALPHABETIC_ALPHABETIC" };
+    key <AE03> { [ NoSymbol,        braceleft,                5,             cent ], type[group1]= "WORKMAN_QWERTY_ALPHABETIC_ALPHABETIC" };
+    key <AE04> { [ NoSymbol,       braceright,                3,              yen ], type[group1]= "WORKMAN_QWERTY_ALPHABETIC_ALPHABETIC" };
+    key <AE05> { [ NoSymbol,        parenleft,                1,         EuroSign ], type[group1]= "WORKMAN_QWERTY_ALPHABETIC_ALPHABETIC" };
+    key <AE06> { [ NoSymbol,            equal,                9,         sterling,dead_circumflex ], type[group1]= "WORKMAN_QWERTY_ALPHABETIC_ALPHABETIC" };
+    key <AE07> { [ NoSymbol,         asterisk,                0 ], type[group1]= "WORKMAN_QWERTY_ALPHABETIC_ALPHABETIC" };
+    key <AE08> { [ NoSymbol,       parenright,                2,          onehalf ], type[group1]= "WORKMAN_QWERTY_ALPHABETIC_ALPHABETIC" };
+    key <AE09> { [ NoSymbol,             plus,                4,       dead_grave ], type[group1]= "WORKMAN_QWERTY_ALPHABETIC_ALPHABETIC" };
+    key <AE10> { [ NoSymbol,     bracketright,                6 ], type[group1]= "WORKMAN_QWERTY_ALPHABETIC_ALPHABETIC" };
+    key <AE11> { [ NoSymbol,           exclam,                8,       exclamdown ], type[group1]= "WORKMAN_QWERTY_ALPHABETIC_ALPHABETIC" };
     key <AE12> { [ NoSymbol,       numbersign,            grave,       dead_grave ] };
 
     key <AD01> { [ NoSymbol,        semicolon,            colon,   dead_diaeresis,   dead_diaeresis ] };
     key <AD02> { [ NoSymbol,            comma,             less,    guillemotleft,       dead_caron ] };
     key <AD03> { [ NoSymbol,           period,          greater,   guillemotright,   periodcentered ] };
     key <AD04> { [ NoSymbol,                p,                P,        paragraph,          section ] };
-    key <AD05> { [ NoSymbol,                y,                Y,       udiaeresis,       Udiaeresis ], type[group1]= "DVORAK_QWERTY_ALPHABETIC_ALPHABETIC" };
-    key <AD08> { [ NoSymbol,                c,                C,         ccedilla,         Ccedilla ], type[group1]= "DVORAK_QWERTY_ALPHABETIC_ALPHABETIC" };
+    key <AD05> { [ NoSymbol,                y,                Y,       udiaeresis,       Udiaeresis ], type[group1]= "WORKMAN_QWERTY_ALPHABETIC_ALPHABETIC" };
+    key <AD08> { [ NoSymbol,                c,                C,         ccedilla,         Ccedilla ], type[group1]= "WORKMAN_QWERTY_ALPHABETIC_ALPHABETIC" };
     key <AD09> { [ NoSymbol,                r,                R,       registered,        trademark ] };
     key <AD11> { [ NoSymbol,            slash,         question,     questiondown ] };
     key <AD12> { [ NoSymbol,               at,      asciicircum,  dead_circumflex,       dead_caron ] };
 
-    key <AC01> { [ NoSymbol,                a,                A,            aring,            Aring ], type[group1]= "DVORAK_QWERTY_ALPHABETIC_ALPHABETIC" };
-    key <AC02> { [ NoSymbol,                o,                O,           oslash,         Ooblique ], type[group1]= "DVORAK_QWERTY_ALPHABETIC_ALPHABETIC" };
-    key <AC03> { [ NoSymbol,                e,                E,               ae,               AE ], type[group1]= "DVORAK_QWERTY_ALPHABETIC_ALPHABETIC" };
-    key <AC04> { [ NoSymbol,                u,                U,           eacute,           Eacute ], type[group1]= "DVORAK_QWERTY_ALPHABETIC_ALPHABETIC" };
-    key <AC06> { [ NoSymbol,                d,                D,              eth,              ETH ], type[group1]= "DVORAK_QWERTY_ALPHABETIC_ALPHABETIC" };
+    key <AC01> { [ NoSymbol,                a,                A,            aring,            Aring ], type[group1]= "WORKMAN_QWERTY_ALPHABETIC_ALPHABETIC" };
+    key <AC02> { [ NoSymbol,                o,                O,           oslash,         Ooblique ], type[group1]= "WORKMAN_QWERTY_ALPHABETIC_ALPHABETIC" };
+    key <AC03> { [ NoSymbol,                e,                E,               ae,               AE ], type[group1]= "WORKMAN_QWERTY_ALPHABETIC_ALPHABETIC" };
+    key <AC04> { [ NoSymbol,                u,                U,           eacute,           Eacute ], type[group1]= "WORKMAN_QWERTY_ALPHABETIC_ALPHABETIC" };
+    key <AC06> { [ NoSymbol,                d,                D,              eth,              ETH ], type[group1]= "WORKMAN_QWERTY_ALPHABETIC_ALPHABETIC" };
     key <AC07> { [ NoSymbol,                h,                H,       dead_acute ] };
-    key <AC08> { [ NoSymbol,                t,                T,            thorn,            THORN ], type[group1]= "DVORAK_QWERTY_ALPHABETIC_ALPHABETIC" };
-    key <AC09> { [ NoSymbol,                n,                N,           ntilde,           Ntilde ], type[group1]= "DVORAK_QWERTY_ALPHABETIC_ALPHABETIC" };
+    key <AC08> { [ NoSymbol,                t,                T,            thorn,            THORN ], type[group1]= "WORKMAN_QWERTY_ALPHABETIC_ALPHABETIC" };
+    key <AC09> { [ NoSymbol,                n,                N,           ntilde,           Ntilde ], type[group1]= "WORKMAN_QWERTY_ALPHABETIC_ALPHABETIC" };
     key <AC10> { [ NoSymbol,                s,                S,           ssharp ] };
-    key <AC11> { [ NoSymbol,            minus,       underscore,           hyphen ], type[group1]= "DVORAK_QWERTY_ALPHABETIC_ALPHABETIC" };
+    key <AC11> { [ NoSymbol,            minus,       underscore,           hyphen ], type[group1]= "WORKMAN_QWERTY_ALPHABETIC_ALPHABETIC" };
 
     key <AB01> { [ NoSymbol,       apostrophe,         quotedbl,       dead_acute, dead_doubleacute ] };
 
