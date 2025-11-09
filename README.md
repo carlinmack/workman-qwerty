@@ -1,7 +1,5 @@
 Workman Qwerty for Linux XKB configuration files
 ------
-> [!NOTE]
-> I'm not the original creator of this config, I had a fork, and original creator must have deleted their github account.
 
 these keymaps using first level to redirect to different keycode in inet "evdev" section that won't used in ordinary keyboard.
 
@@ -9,46 +7,21 @@ any keys work as Qwerty when press with Control, Alt or Super.
 
 2-5 levels works as same as 1-4 levels of original layout.
 
-created and tested on Ubuntu 14.04.
+created and tested on Debian 13.1
 
-
-Usage
+Installation
 ------
-make sure backup your data.
 
-download zip, and simply replace files:
+\#./install.sh
 
-`/usr/share/X11/xkb/rules/base.lst`
+It will save your xkb configuration in archive named xkb-backup.tar.gz located in your working directory and will install the new configuration files.
 
-`/usr/share/X11/xkb/rules/base.xml`
-
-`/usr/share/X11/xkb/rules/evdev.lst`
-
-`/usr/share/X11/xkb/rules/evdev.xml`
-
-`/usr/share/X11/xkb/symbols/inet`
-
-`/usr/share/X11/xkb/symbols/us`
-
-`/usr/share/X11/xkb/types/complete`
-
-and add:
-
-`/usr/share/X11/xkb/types/workman-qwerty`
-
-after reboot, you can choose new input sources from text entry setting:
-Workman-Qwerty
-------
-Workman-Qwerty simplified (no dead keys)
-------
-Workman-Qwerty, international with dead keys
-------
-Workman-Qwerty alternative international no dead keys
-------
-Workman-Qwerty, classic
-------
-Workman-Qwerty, programmer
-------
+After reboot, you can choose the Workman-Qwerty layout from text entry setting:
+* Workman-Qwerty
+* Workman-Qwerty simplified (no dead keys)
+* Workman-Qwerty, international with dead keys
+* Workman-Qwerty alternative international no dead keys
+* Workman-Qwerty, classic
+* Workman-Qwerty, programmer
 
 you may need reassign shortcuts in system setting.
-
